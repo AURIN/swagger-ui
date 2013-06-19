@@ -22,7 +22,7 @@
                 discoveryUrl:"http://petstore.swagger.wordnik.com/api/api-docs.json",
                 apiKey:"special-key",
                 dom_id:"swagger-ui-container",
-                supportHeaderParams: false,
+                supportHeaderParams: true,
                 supportedSubmitMethods: ['get', 'post', 'put'],
                 onComplete: function(swaggerApi, swaggerUi){
                 	if(console) {
@@ -69,6 +69,22 @@
 
 <div id="message-bar" class="swagger-ui-wrap">
     &nbsp;
+</div>
+
+<div class="swagger-ui-wrap">
+  <p>
+    <a href="javascript:$('#input_baseUrl').val('https://dev-api.aurin.org.au/workflow-api/resources.json');$('#explore').click()">[Work-flow API]</a>
+  </p>
+  <p>
+    <a href="javascript:$('#input_baseUrl').val('https://dev-api.aurin.org.au/geoinfo');$('#explore').click()">[Geo-Info API]</a>
+  </p>
+  <p>
+    <a href="javascript:$('#input_baseUrl').val('http://localhost/datastore/api-docs.json');$('#explore').click()">[Datastore API|localhost]</a>
+    <a href="javascript:$('#input_baseUrl').val('https://dev-api.aurin.org.au/datastore-new');$('#explore').click()">[Datastore API|dev-api]</a>
+  </p>
+  <p>
+    <a href="javascript:$('#input_baseUrl').val('https://dev-api.aurin.org.au/geoclassification-new');$('#explore').click()">[GeoClassification API]</a>
+  </p>
 </div>
 
 <div id="swagger-ui-container" class="swagger-ui-wrap">
