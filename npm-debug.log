@@ -1,0 +1,29 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'run-script', 'build' ]
+2 info using npm@1.2.18
+3 info using node@v0.10.15
+4 verbose read json /home/lmorandini/git/swagger-ui/package.json
+5 verbose run-script [ 'prebuild', 'build', 'postbuild' ]
+6 info prebuild swagger-ui@0.1.14
+7 info build swagger-ui@0.1.14
+8 verbose unsafe-perm in lifecycle true
+9 silly exec sh "-c" "PATH=$PATH:./node_modules/.bin cake dist"
+10 silly sh,-c,PATH=$PATH:./node_modules/.bin cake dist,/home/lmorandini/git/swagger-ui spawning
+11 info swagger-ui@0.1.14 Failed to exec build script
+12 error swagger-ui@0.1.14 build: `PATH=$PATH:./node_modules/.bin cake dist`
+12 error `sh "-c" "PATH=$PATH:./node_modules/.bin cake dist"` failed with 126
+13 error Failed at the swagger-ui@0.1.14 build script.
+13 error This is most likely a problem with the swagger-ui package,
+13 error not with npm itself.
+13 error Tell the author that this fails on your system:
+13 error     PATH=$PATH:./node_modules/.bin cake dist
+13 error You can get their info via:
+13 error     npm owner ls swagger-ui
+13 error There is likely additional logging output above.
+14 error System Linux 3.11.0-13-generic
+15 error command "/usr/bin/nodejs" "/usr/bin/npm" "run-script" "build"
+16 error cwd /home/lmorandini/git/swagger-ui
+17 error node -v v0.10.15
+18 error npm -v 1.2.18
+19 error code ELIFECYCLE
+20 verbose exit [ 1, true ]
